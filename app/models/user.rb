@@ -65,7 +65,7 @@ class User < ApplicationRecord
     # Sends password reset email
     def send_password_reset_email
         UserMailer.password_reset(self).deliver_now
-    end
+      end
 
     # Returns true if a password reset has expired
     def password_reset_expired?
