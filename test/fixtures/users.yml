@@ -6,9 +6,9 @@ michael:
   activated: true
   activated_at: <%= Time.zone.now %>
 
-jimmy:
-  name: Jimmy Cababa
-  email: jimmy@example.com
+archer:
+  name: Sterling Archer
+  email: duchess@example.gov
   password_digest: <%= User.digest('password') %>
   activated: true
   activated_at: <%= Time.zone.now %>
@@ -29,7 +29,7 @@ malory:
 
 <% 30.times do |n| %>
 user_<%= n %>:
-  name: <%= "User #{n}" %>
+  name:  <%= "User #{n}" %>
   email: <%= "user-#{n}@example.com" %>
   password_digest: <%= User.digest('password') %>
   activated: true
